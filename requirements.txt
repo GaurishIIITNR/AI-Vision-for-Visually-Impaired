@@ -1,0 +1,7 @@
+google-generativeai
+streamlit
+opencv-python
+pyttsx3
+speechrecognition
+pipwin
+pyaudio
