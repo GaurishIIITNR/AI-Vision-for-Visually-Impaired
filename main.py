@@ -122,7 +122,7 @@ def main():
         try:
             text = get_user_audio()
         except:
-            st.input("please enter text")
+            text = st.text_input("Enter your query:")
         print(text)
         if "stop" in text:
             try:
