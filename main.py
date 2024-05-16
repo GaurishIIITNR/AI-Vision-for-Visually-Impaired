@@ -116,7 +116,10 @@ def main():
 
         st.image(image, channels="BGR")
         speak_text("Please ask your query")
-        text = get_user_audio()
+        try:
+            text = get_user_audio()
+        except:
+            st.input("please enter text")
         print(text)
         if "stop" in text:
             speak_text("bye bye have a nice day meow ")
