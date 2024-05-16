@@ -115,7 +115,10 @@ def main():
 
 
         st.image(image, channels="BGR")
-        speak_text("Please ask your query")
+        try:
+            speak_text("Please ask your query")
+        except:
+            st.write("please write your query")
         try:
             text = get_user_audio()
         except:
