@@ -122,7 +122,10 @@ def main():
             st.input("please enter text")
         print(text)
         if "stop" in text:
-            speak_text("bye bye have a nice day meow ")
+            try:
+                speak_text("bye bye have a nice day meow ")
+            except:
+                st.write("bye bye have a nice day meow")
             return
         
         if "description" in text:
@@ -130,7 +133,10 @@ def main():
             description = get_image_description(image,prompt)
             if description:
                 st.success(f"Image Description:\n{description}")
-                speak_text(description)
+                try:
+                    speak_text(description)
+                except:
+                    pass
             else:
                 st.warning("Failed to generate image description.")
         elif "recognise" or "recognize" in text:
@@ -138,7 +144,10 @@ def main():
             description = get_image_description(image,prompt)
             if description:
                 st.success(f"Image Description:\n{description}")
-                speak_text(description)
+                try:
+                    speak_text(description)
+                except:
+                    pass
             else:
                 st.warning("Failed to generate image description.")
         elif "explain" or "extraction" or "text" in text:
@@ -146,7 +155,10 @@ def main():
             description = get_image_description(image,prompt)
             if description:
                 st.success(f"Image Description:\n{description}")
-                speak_text(description)
+                try:
+                    speak_text(description)
+                except:
+                    pass
             else:
                 st.warning("Failed to generate image description.")
         else:
@@ -154,7 +166,10 @@ def main():
             description = get_image_description(image, prompt)
             if description:
                 st.success(f"Image Description:\n{description}")
-                speak_text(description)
+                try:
+                    speak_text(description)
+                except:
+                    pass
             else:
                 st.warning("Failed to generate image description.")
         
