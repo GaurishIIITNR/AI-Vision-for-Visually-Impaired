@@ -41,7 +41,7 @@ pydeck==0.9.1
 Pygments==2.18.0
 pyparsing==3.1.2
 python-dateutil==2.9.0.post0
-pyttsx3==2.90
+pyttsx3==2.71
 pytz==2024.1
 referencing==0.35.1
 requests==2.31.0
